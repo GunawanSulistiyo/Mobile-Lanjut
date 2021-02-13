@@ -1,0 +1,39 @@
+<html>
+<head>
+</head>
+<body>
+<p><font face='Times New Roman' size='10' color='black'>Gunawan Sulistiyo - Hitung Luas Segitiga</font></p>
+<form name='luassgt' method='post'>
+<table>
+<tr>
+<td>Alas</td>
+<td>:</td>
+<td><input type='text' name='alas' value='0' onchange='hitungluas();'></td>
+</tr>
+<tr>
+<td>Tinggi</td>
+<td>:</td>
+<td><input type='text' name='tinggi' value='0' onchange='hitungluas();'></td>
+</tr>
+<tr>
+<td>Luas</td>
+<td>:</td>
+<td> <input type='text' name='luass3' onchange='hitungluas();'></td>
+</tr>
+</table>
+</form>
+</body>
+<script type='text/javascript'>
+function hitungluas(){
+var alas = document.forms['luassgt']['alas'].value;
+alas = parseInt(alas);
+var tinggi = document.forms['luassgt']['tinggi'].value;
+tinggi = parseInt(tinggi);
+var luas = (alas*tinggi)/2;
+document.forms['luassgt']['luass3'].value = luas;
+}
+
+</script>
+
+</html>
+
